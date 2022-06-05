@@ -1,0 +1,45 @@
+.btn {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  transition: background-color filter 0.3s;
+  @media screen and(max-width: 500px) {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &:active,
+  &:focus {
+    filter: brightness(120%);
+  }
+
+  &.other-btn {
+    background-color: $color-primary;
+    color: $color-other-btn;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &.digit-btn {
+    background-color: $color-secondary;
+    &:hover {
+      background-color: rgba(#fff, 0.35);
+    }
+  }
+
+  &.alu-btn {
+    background-color: $color-tertiary;
+    &:hover {
+      background-color: #fff;
+      color: $color-tertiary;
+    }
+  }
+  &.zero {
+    width: 100%;
+    border-radius: 100rem;
+  }
+}
