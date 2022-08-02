@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary-Calculator</title>
+    <!-- Favicons -->
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="icon" href="assets/favicons/Web/icons8-salary-smashingstocks-flat-16.png" type="16x16" />
+    <link rel="icon" href="assets/favicons/Web/icons8-salary-smashingstocks-flat-32.png type="32x32" />
+  </head>
+  <body>
+    <section class="app">
+      <div class="buttons">
+        <button class="btn registered" id="checkRegClear">Գրանցված</button>
+        <button class="btn clear">Մաքուր</button>
+      </div>
+      <div class="question-section">
+        <p class="question-section__question">Մասնակցում եք արդյո՞ք պարտադիր կուտակային կենսաթոշակային համակարգին: Եթե այո, ապա ի՞նչ հիմունքներով</p>
+        <div class="question-section__answers answer_1">Այո, կամավոր՝ միացած 07/2018-ից հետո</div>
+        <div class="question-section__answers answer_2" id="btn-checked">Այո, պարտադիր կամ մինչ 07/2018 միացած կամավոր</div>
+        <div class="question-section__answers answer_3">Չեմ Մասնակցում</div>
+        <p class="question-section__question">Արդյո՞ք աշխատում եք ՏՏ ոլորտի հարկային արտոնություններից օգտվող ընկերությունում։</p>
+
+        <label class="checkbox">
+          <input type="checkbox" />
+          <div></div>
+        </label>
+      </div>
+      <div class="salary-section">
+        <div class="salary-section__text">Նշեք աշխատավարձի չափը</div>
+        <input class="salary-section__salary-input" type="text" value="150000" />
+        <span class="salary-section__text">Եկամտային Հարկ (21%) / ՏՏ (10%)</span>
+        <div class="salary-section__calculating income-tax">0</div>
+        <span class="salary-section__text">Սոցիալական վճար</span>
+        <div class="salary-section__calculating social-fee">0</div>
+        <span class="salary-section__text">Դրոշմանիշային վճար</span>
+        <div class="salary-section__calculating stamp-fee">0</div>
+        <span class="salary-section__text output-title">Մաքուր Մնացորդ</span>
+        <div class="salary-section__calculating output">0</div>
+        <span class="salary-section__text">Բացատրագիր</span>
+        <div class="salary-section__calculating" id="description">Խնդրում ենք մուտքագրեք գումարը</div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

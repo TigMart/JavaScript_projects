@@ -1,0 +1,185 @@
+#btn-checked {
+  background-color: red;
+  color: white;
+}
+
+#checkRegClear {
+  background-color: #336699;
+  color: white;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#description {
+  font-size: 1.1rem;
+  border-bottom: none;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  display: block;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.checkbox input {
+  display: none;
+}
+.checkbox div {
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  border-radius: 20px;
+  transition: 0.25s 0.09s;
+  position: relative;
+  background: #f3f3f3;
+}
+.checkbox div:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -3px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.15s;
+}
+.checkbox input:checked + div {
+  background: #336699;
+}
+.checkbox input:checked + div + span {
+  color: #777;
+}
+.checkbox input:checked + div:after {
+  transform: translateX(25px);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  max-width: 70rem;
+  width: 100%;
+  min-height: 80rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  max-width: 65rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  width: 50%;
+  font-size: 1.6rem;
+  background-color: #f3f3f3;
+  color: #777;
+}
+
+.question-section {
+  max-width: 65rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+.question-section__question {
+  color: #999;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: text;
+  text-align: right;
+}
+.question-section__answers {
+  max-width: 65rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #777;
+  text-align: right;
+}
+
+.salary-section {
+  max-width: 65rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.salary-section__text {
+  margin-top: 1.3rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #777;
+}
+.salary-section__salary-input {
+  font-family: Courier, monospace;
+  width: 100%;
+  padding: 0 1rem;
+  height: 5rem;
+  text-align: right;
+  font-size: 2.5rem;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  color: #336699;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.salary-section__calculating {
+  cursor: text;
+  width: 100%;
+  text-align: right;
+  font-weight: 600;
+  font-family: courier;
+  padding: 0.8rem 0;
+  color: #999;
+  letter-spacing: 0.2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 2rem;
+}/*# sourceMappingURL=main.css.map */
