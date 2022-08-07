@@ -4,7 +4,7 @@ const btnColor = "#f3f3f3";
 const answerColor = "#ff4545";
 
 const btnReg = document.querySelector(".registered");
-const btnClear = document.querySelector("clear");
+const btnClear = document.querySelector(".clear");
 const answer_1 = document.querySelector(".answer_1");
 const answer_2 = document.querySelector(".answer_2");
 const answer_3 = document.querySelector(".answer_3");
