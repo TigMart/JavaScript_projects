@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <title>Interpretator Dragon</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      button {
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      button:hover {
+        background-color: green;
+        color: white;
+        transform: scale(0.95);
+      }
+      section {
+        display: flex;
+        gap: 20px;
+      }
+      textarea {
+        font-size: 18px;
+      }
+      p {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Run</button>
+    <section>
+      <div>
+        <p>Dragon 🐉</p>
+        <textarea id="input" cols="40" rows="25"></textarea>
+      </div>
+      <div>
+        <p>Output</p>
+        <pre id="output"></pre>
+      </div>
+    </section>
+    <script src="./interpretator.js"></script>
+  </body>
+</html>
